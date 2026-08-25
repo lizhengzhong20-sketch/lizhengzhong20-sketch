@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">ScalarPulse — 让训练过程实时可见</title>
+  <desc id="desc">A light glassmorphism project card for ScalarPulse, featuring a live loss curve and its real-time scalar metrics, local-first JSONL storage, and zero core dependencies.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBFDFF"/>
+      <stop offset="0.52" stop-color="#F2F8FF"/>
+      <stop offset="1" stop-color="#F8F4FF"/>
+    </linearGradient>
+    <radialGradient id="skyGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#9EDCFF" stop-opacity="0.64"/>
+      <stop offset="1" stop-color="#9EDCFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violetGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#C9BBFF" stop-opacity="0.52"/>
+      <stop offset="1" stop-color="#C9BBFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mintGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#A9ECD8" stop-opacity="0.46"/>
+      <stop offset="1" stop-color="#A9ECD8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="0.56" stop-color="#FFFFFF" stop-opacity="0.70"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.52"/>
+    </linearGradient>
+    <linearGradient id="glassStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.50" stop-color="#DCEAF7"/>
+      <stop offset="1" stop-color="#D7CEF8"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#69BEEB"/>
+      <stop offset="0.48" stop-color="#8B8BE8"/>
+      <stop offset="1" stop-color="#61C7AA"/>
+    </linearGradient>
+    <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8A9BEA" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#8A9BEA" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="microGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#849AB7" stroke-opacity="0.07"/>
+    </pattern>
+    <pattern id="chartGrid" width="53" height="36" patternUnits="userSpaceOnUse">
+      <path d="M53 0H0V36" fill="none" stroke="#9AAAC0" stroke-opacity="0.14"/>
+    </pattern>
+    <filter id="shadow" x="-25%" y="-30%" width="150%" height="180%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#7089AA" flood-opacity="0.16"/>
+    </filter>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="frame">
+      <rect x="8" y="8" width="1184" height="284" rx="34"/>
+    </clipPath>
+    <clipPath id="chartClip">
+      <rect x="786" y="123" width="340" height="104" rx="15"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect x="8" y="8" width="1184" height="284" rx="34" fill="url(#background)"/>
+    <rect x="8" y="8" width="1184" height="284" rx="34" fill="url(#microGrid)"/>
+    <ellipse cx="80" cy="20" rx="285" ry="190" fill="url(#skyGlow)"/>
+    <ellipse cx="638" cy="-42" rx="300" ry="160" fill="url(#violetGlow)"/>
+    <ellipse cx="1110" cy="305" rx="350" ry="210" fill="url(#mintGlow)"/>
+
+    <g filter="url(#shadow)">
+      <rect x="38" y="32" width="682" height="236" rx="30" fill="url(#glass)" stroke="url(#glassStroke)" stroke-width="1.2"/>
+      <path d="M70 50H688" stroke="#FFFFFF" stroke-opacity="0.92" stroke-linecap="round"/>
+    </g>
+
+    <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', Arial, sans-serif">
+      <g transform="translate(70 58)">
+        <rect width="125" height="28" rx="14" fill="#FFFFFF" fill-opacity="0.74" stroke="#D8E8F4"/>
+        <circle cx="17" cy="14" r="4" fill="#64CBAE" filter="url(#softGlow)"/>
+        <text x="30" y="18" fill="#71809A" font-size="10.5" font-weight="750" letter-spacing="1.4">LOCAL · LIVE</text>
+      </g>
+
+      <text x="70" y="137" fill="#263651" font-size="42" font-weight="780" letter-spacing="0.3">ScalarPulse</text>
+      <text x="70" y="169" fill="#53627B" font-size="18" font-weight="600">让训练过程实时可见</text>
+
+      <g font-size="11.5" font-weight="700">
+        <g transform="translate(70 193)">
+          <rect width="180" height="34" rx="17" fill="#EAF7FF" stroke="#C3E5F8"/>
+          <circle cx="18" cy="17" r="4" fill="#63B9E5"/>
+          <text x="31" y="21" fill="#3E789C">Real-time scalar metrics</text>
+        </g>
+        <g transform="translate(260 193)">
+          <rect width="156" height="34" rx="17" fill="#F2EEFF" stroke="#D8CCFA"/>
+          <circle cx="18" cy="17" r="4" fill="#9384DF"/>
+          <text x="31" y="21" fill="#6B60A5">Local-first JSONL</text>
+        </g>
+        <g transform="translate(426 193)">
+          <rect width="194" height="34" rx="17" fill="#EAF9F4" stroke="#C0EBDD"/>
+          <circle cx="18" cy="17" r="4" fill="#61BFA4"/>
+          <text x="31" y="21" fill="#438C79">Zero core dependencies</text>
+        </g>
+      </g>
+
+      <g font-size="10.5" font-weight="760" letter-spacing="0.6">
+        <g transform="translate(70 237)">
+          <rect width="118" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.68" stroke="#D9E6F2"/>
+          <text x="17" y="16" fill="#60718D">PYTHON 3.10+</text>
+        </g>
+        <g transform="translate(196 237)">
+          <rect width="72" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.68" stroke="#D9E6F2"/>
+          <text x="19" y="16" fill="#786CAC">ALPHA</text>
+        </g>
+      </g>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="748" y="32" width="414" height="236" rx="30" fill="url(#glass)" stroke="url(#glassStroke)" stroke-width="1.2"/>
+      <path d="M778 50H1132" stroke="#FFFFFF" stroke-opacity="0.94" stroke-linecap="round"/>
+    </g>
+
+    <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+      <text x="780" y="77" fill="#7D8CA4" font-size="10.5" font-weight="760" letter-spacing="1.65">TRAINING METRICS</text>
+      <g transform="translate(1061 60)">
+        <rect width="69" height="24" rx="12" fill="#EAF9F4" stroke="#BDE8DA"/>
+        <circle cx="14" cy="12" r="3.5" fill="#5CC2A4" filter="url(#softGlow)"/>
+        <text x="25" y="15.5" fill="#4A8C7B" font-size="9.5" font-weight="760" letter-spacing="0.8">LIVE</text>
+      </g>
+
+      <g>
+        <rect x="780" y="93" width="116" height="23" rx="11.5" fill="#FFFFFF" fill-opacity="0.62" stroke="#DEE9F3"/>
+        <text x="794" y="108" fill="#70809A" font-size="10" font-weight="680">metric</text>
+        <text x="850" y="108" fill="#626FD1" font-size="10" font-weight="760">loss</text>
+        <rect x="904" y="93" width="104" height="23" rx="11.5" fill="#FFFFFF" fill-opacity="0.62" stroke="#DEE9F3"/>
+        <text x="918" y="108" fill="#70809A" font-size="10" font-weight="680">step</text>
+        <text x="969" y="108" fill="#52637E" font-size="10" font-weight="760">240</text>
+      </g>
+
+      <rect x="780" y="117" width="352" height="116" rx="17" fill="#FBFDFF" fill-opacity="0.66" stroke="#DCE8F3"/>
+      <g clip-path="url(#chartClip)">
+        <rect x="786" y="123" width="340" height="104" fill="url(#chartGrid)"/>
+        <path d="M786 145 C804 142 813 153 829 150 C845 146 856 166 873 158 C889 151 898 168 915 166 C932 163 942 181 960 173 C978 165 988 181 1004 178 C1021 175 1031 191 1048 184 C1065 177 1078 195 1094 190 C1107 186 1117 194 1126 191 L1126 227 L786 227 Z" fill="url(#chartFill)"/>
+        <path d="M786 145 C804 142 813 153 829 150 C845 146 856 166 873 158 C889 151 898 168 915 166 C932 163 942 181 960 173 C978 165 988 181 1004 178 C1021 175 1031 191 1048 184 C1065 177 1078 195 1094 190 C1107 186 1117 194 1126 191" fill="none" stroke="url(#pulse)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="1126" cy="191" r="4.5" fill="#63C6AA" stroke="#FFFFFF" stroke-width="2" filter="url(#softGlow)"/>
+      </g>
+
+      <g transform="translate(780 241)" font-size="9.5" font-weight="700">
+        <path d="M2 7H18" stroke="url(#pulse)" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="25" y="10" fill="#71809A">loss</text>
+        <text x="314" y="10" fill="#8794A9">local run</text>
+      </g>
+    </g>
+  </g>
+
+  <rect x="8.5" y="8.5" width="1183" height="283" rx="33.5" fill="none" stroke="#DCE8F4"/>
+</svg>

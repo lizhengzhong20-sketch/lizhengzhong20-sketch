@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Python LLM agent loop</title>
+  <desc id="desc">A light glassmorphism workflow from user input to retrieval and memory, LLM reasoning, tool calling, and evaluation, with evaluation feeding back into memory.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FCFEFF"/>
+      <stop offset="0.48" stop-color="#F2F8FF"/>
+      <stop offset="1" stop-color="#FBF8FF"/>
+    </linearGradient>
+    <radialGradient id="blueGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#9EDCFF" stop-opacity="0.46"/>
+      <stop offset="1" stop-color="#9EDCFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violetGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#CDBDFF" stop-opacity="0.40"/>
+      <stop offset="1" stop-color="#CDBDFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mintGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#A8EDDA" stop-opacity="0.40"/>
+      <stop offset="1" stop-color="#A8EDDA" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.96"/>
+      <stop offset="0.58" stop-color="#FFFFFF" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.52"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#79BEE8"/>
+      <stop offset="0.52" stop-color="#9487E5"/>
+      <stop offset="1" stop-color="#67C8AE"/>
+    </linearGradient>
+    <linearGradient id="loop" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#67C8AE"/>
+      <stop offset="0.58" stop-color="#9A8CE7"/>
+      <stop offset="1" stop-color="#78BDE7"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#829CBC" stroke-opacity="0.055"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-45%" width="160%" height="210%">
+      <feDropShadow dx="0" dy="9" stdDeviation="12" flood-color="#6C84A5" flood-opacity="0.14"/>
+    </filter>
+    <filter id="softGlow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.2" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9Z" fill="#8B95D8"/>
+    </marker>
+    <marker id="arrowReturn" viewBox="0 0 10 10" refX="8.2" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9Z" fill="#79BCE4"/>
+    </marker>
+    <clipPath id="frame">
+      <rect x="8" y="8" width="1184" height="284" rx="34"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect x="8" y="8" width="1184" height="284" rx="34" fill="url(#bg)"/>
+    <rect x="8" y="8" width="1184" height="284" rx="34" fill="url(#grid)"/>
+    <ellipse cx="92" cy="30" rx="260" ry="165" fill="url(#blueGlow)"/>
+    <ellipse cx="590" cy="-5" rx="285" ry="150" fill="url(#violetGlow)"/>
+    <ellipse cx="1120" cy="260" rx="300" ry="185" fill="url(#mintGlow)"/>
+
+    <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', Arial, sans-serif">
+      <g>
+        <rect x="42" y="29" width="315" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.72" stroke="#DDEAF6"/>
+        <circle cx="61" cy="44" r="4.2" fill="#65CBAF" filter="url(#softGlow)"/>
+        <text x="75" y="49" fill="#7787A0" font-size="11.5" font-weight="750" letter-spacing="1.65">PYTHON · NLP · LLM · AI AGENTS</text>
+        <text x="1148" y="48" text-anchor="end" fill="#98A6B9" font-size="10.5" font-weight="700" letter-spacing="1.4">AGENT LOOP / 01</text>
+      </g>
+
+      <g fill="none" stroke="url(#flow)" stroke-width="2.4" stroke-linecap="round" marker-end="url(#arrow)">
+        <path d="M228 118H264"/>
+        <path d="M446 118H482"/>
+        <path d="M664 118H700"/>
+        <path d="M882 118H918"/>
+      </g>
+
+      <g filter="url(#shadow)">
+        <g>
+          <rect x="46" y="78" width="182" height="80" rx="25" fill="url(#glass)" stroke="#CFE5F5" stroke-width="1.2"/>
+          <circle cx="76" cy="109" r="15" fill="#EAF7FF" stroke="#BFE1F4"/>
+          <path d="M69 105H83M69 110H79M69 105V117L74 113H83V101H69Z" fill="none" stroke="#579BC4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="101" y="109" fill="#2E4A63" font-size="15" font-weight="760">用户输入</text>
+          <text x="101" y="131" fill="#8A99AB" font-size="10.5" font-weight="700" letter-spacing="1">USER INPUT</text>
+        </g>
+
+        <g>
+          <rect x="264" y="78" width="182" height="80" rx="25" fill="url(#glass)" stroke="#CFE2F5" stroke-width="1.2"/>
+          <circle cx="294" cy="109" r="15" fill="#EDF7FF" stroke="#C6E1F4"/>
+          <ellipse cx="294" cy="103" rx="8" ry="3.6" fill="none" stroke="#5B9BC4" stroke-width="1.45"/>
+          <path d="M286 103V114C286 116 290 118 294 118C298 118 302 116 302 114V103M286 108C286 110 290 112 294 112C298 112 302 110 302 108" fill="none" stroke="#5B9BC4" stroke-width="1.45"/>
+          <text x="319" y="109" fill="#2F4A64" font-size="15" font-weight="760">检索 / 记忆</text>
+          <text x="319" y="131" fill="#8898AC" font-size="10.5" font-weight="700" letter-spacing="0.85">RAG · MEMORY</text>
+        </g>
+
+        <g>
+          <rect x="482" y="78" width="182" height="80" rx="25" fill="url(#glass)" stroke="#D9D0F7" stroke-width="1.2"/>
+          <circle cx="512" cy="109" r="15" fill="#F2EEFF" stroke="#D6CCF5"/>
+          <path d="M512 99L514.4 105.8L521 109L514.4 112.2L512 119L509.6 112.2L503 109L509.6 105.8Z" fill="#8C7BDB" fill-opacity="0.88"/>
+          <circle cx="520.5" cy="101.5" r="2" fill="#B2A7EB"/>
+          <text x="537" y="109" fill="#453F62" font-size="15" font-weight="760">LLM 推理</text>
+          <text x="537" y="131" fill="#9189A6" font-size="10.5" font-weight="700" letter-spacing="0.95">REASONING</text>
+        </g>
+
+        <g>
+          <rect x="700" y="78" width="182" height="80" rx="25" fill="url(#glass)" stroke="#D7D2F5" stroke-width="1.2"/>
+          <circle cx="730" cy="109" r="15" fill="#F1EFFF" stroke="#D8D1F4"/>
+          <path d="M724 113L728 109L725 106L729 102L732 105L736 101C738 105 737 109 734 111C732 113 729 114 726 113L722 117Z" fill="none" stroke="#8174C7" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="755" y="109" fill="#454160" font-size="15" font-weight="760">工具调用</text>
+          <text x="755" y="131" fill="#928CA5" font-size="10.5" font-weight="700" letter-spacing="0.9">TOOL CALLING</text>
+        </g>
+
+        <g>
+          <rect x="918" y="78" width="236" height="80" rx="25" fill="url(#glass)" stroke="#C9E9DE" stroke-width="1.2"/>
+          <circle cx="948" cy="109" r="15" fill="#EAF9F4" stroke="#C5E8DC"/>
+          <path d="M941.5 109L946 113.5L955 104.5" fill="none" stroke="#50A48C" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="973" y="109" fill="#31584E" font-size="15" font-weight="760">结果评估</text>
+          <text x="973" y="131" fill="#7E9B92" font-size="10.5" font-weight="700" letter-spacing="0.9">EVALUATION · FEEDBACK</text>
+        </g>
+      </g>
+
+      <g>
+        <path d="M1036 158V190C1036 207 1022 218 1005 218H322C305 218 294 207 294 190V166" fill="none" stroke="url(#loop)" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="5 6" marker-end="url(#arrowReturn)"/>
+        <rect x="563" y="202" width="188" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.82" stroke="#DED9F6"/>
+        <circle cx="582" cy="217" r="3.4" fill="#9587DC"/>
+        <text x="594" y="221" fill="#7D7696" font-size="10.5" font-weight="750" letter-spacing="1.1">REFLECT &amp; REMEMBER</text>
+      </g>
+
+      <g filter="url(#shadow)">
+        <rect x="264" y="245" width="672" height="34" rx="17" fill="#FFFFFF" fill-opacity="0.75" stroke="#D9E5F3"/>
+        <circle cx="289" cy="262" r="4" fill="#78BDE4"/>
+        <circle cx="911" cy="262" r="4" fill="#68C8AE"/>
+        <text x="600" y="268" text-anchor="middle" fill="#46536C" font-size="15" font-weight="760" letter-spacing="0.35">Agent = Model + Tools + Memory + Evaluation</text>
+      </g>
+    </g>
+  </g>
+
+  <rect x="8.5" y="8.5" width="1183" height="283" rx="33.5" fill="none" stroke="#DCE8F4"/>
+</svg>

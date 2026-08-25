@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140" role="img" aria-labelledby="title desc">
+  <title id="title">Lizhengzhong focus stack</title>
+  <desc id="desc">A light glassmorphism row highlighting Python, PyTorch, NLP, large language models and AI agents, with time series as a small exploring tag.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FCFEFF"/>
+      <stop offset="0.52" stop-color="#F3F8FF"/>
+      <stop offset="1" stop-color="#FAF7FF"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.94"/>
+      <stop offset="0.62" stop-color="#FFFFFF" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.52"/>
+    </linearGradient>
+    <linearGradient id="frameStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.5" stop-color="#D8E8F6"/>
+      <stop offset="1" stop-color="#DDD3F5"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#73BDEA" stop-opacity="0.25"/>
+      <stop offset="0.46" stop-color="#9789E5" stop-opacity="0.62"/>
+      <stop offset="1" stop-color="#67CDB2" stop-opacity="0.22"/>
+    </linearGradient>
+    <radialGradient id="blueGlow">
+      <stop offset="0" stop-color="#A8DEFF" stop-opacity="0.44"/>
+      <stop offset="1" stop-color="#A8DEFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lilacGlow">
+      <stop offset="0" stop-color="#D3C2FF" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#D3C2FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mintGlow">
+      <stop offset="0" stop-color="#B7EEDC" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#B7EEDC" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-70%" width="160%" height="240%">
+      <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#748AA9" flood-opacity="0.13"/>
+    </filter>
+    <filter id="dotGlow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="frame">
+      <rect x="8" y="8" width="1184" height="124" rx="30"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect x="8" y="8" width="1184" height="124" rx="30" fill="url(#background)"/>
+    <ellipse cx="96" cy="20" rx="250" ry="120" fill="url(#blueGlow)"/>
+    <ellipse cx="642" cy="2" rx="280" ry="120" fill="url(#lilacGlow)"/>
+    <ellipse cx="1130" cy="140" rx="260" ry="130" fill="url(#mintGlow)"/>
+    <path d="M42 121H1158" stroke="url(#accentLine)" stroke-linecap="round"/>
+
+    <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', Arial, sans-serif">
+      <g>
+        <circle cx="48" cy="31" r="4.5" fill="#64CDB1" filter="url(#dotGlow)"/>
+        <text x="61" y="36" fill="#7889A3" font-size="11.5" font-weight="750" letter-spacing="2.1">PRIMARY FOCUS</text>
+      </g>
+
+      <g>
+        <rect x="981" y="18" width="177" height="27" rx="13.5" fill="#FFFFFF" fill-opacity="0.62" stroke="#DFE8F2"/>
+        <circle cx="998" cy="31.5" r="3.5" fill="#A6B3C4"/>
+        <text x="1008" y="35.5" fill="#8A98AD" font-size="10" font-weight="700" letter-spacing="0.75">EXPLORING · TIME SERIES</text>
+      </g>
+
+      <g filter="url(#shadow)">
+        <g>
+          <rect x="38" y="55" width="172" height="52" rx="26" fill="url(#glass)" stroke="#C9E6F7"/>
+          <circle cx="65" cy="81" r="16" fill="#E5F5FF" stroke="#C3E4F7"/>
+          <path d="M58 76.5L53.5 81L58 85.5M72 76.5L76.5 81L72 85.5" fill="none" stroke="#5AA4D1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <g>
+          <rect x="222" y="55" width="184" height="52" rx="26" fill="url(#glass)" stroke="#E0D5FA"/>
+          <circle cx="249" cy="81" r="16" fill="#F1EDFF" stroke="#DCD2FA"/>
+          <path d="M249 70.5C250 75 256 77.5 256 83.2C256 88 252.8 91.2 248.7 91.2C244.2 91.2 241 88.1 241 83.9C241 80.9 242.5 78.2 245.6 75.3C245.7 78.2 247.2 80 249.3 80.8C249.7 77.8 248.9 74.5 249 70.5Z" fill="#9A83DD"/>
+          <path d="M248.6 83C250.6 84.2 251.6 85.7 251.3 87.5C250.8 89.3 249.5 90.2 248.1 90.1C246.4 89.9 245.4 88.7 245.5 87.3C245.6 85.9 246.8 84.7 248.6 83Z" fill="#FFFFFF" fill-opacity="0.86"/>
+        </g>
+        <g>
+          <rect x="418" y="55" width="132" height="52" rx="26" fill="url(#glass)" stroke="#CDEBDD"/>
+          <circle cx="445" cy="81" r="16" fill="#E8F8F2" stroke="#C7EBDD"/>
+          <path d="M437.5 75.2H452.5V84.1H445.4L441.2 87.6V84.1H437.5Z" fill="none" stroke="#57A88F" stroke-width="1.65" stroke-linejoin="round"/>
+          <circle cx="442" cy="79.7" r="1" fill="#57A88F"/>
+          <circle cx="445" cy="79.7" r="1" fill="#57A88F"/>
+          <circle cx="448" cy="79.7" r="1" fill="#57A88F"/>
+        </g>
+        <g>
+          <rect x="562" y="55" width="220" height="52" rx="26" fill="url(#glass)" stroke="#D8CDF7"/>
+          <circle cx="589" cy="81" r="16" fill="#F1EEFF" stroke="#D8CEF8"/>
+          <circle cx="584" cy="77" r="2.6" fill="#8E7AD3"/>
+          <circle cx="594" cy="77" r="2.6" fill="#8E7AD3"/>
+          <circle cx="589" cy="86" r="2.6" fill="#8E7AD3"/>
+          <path d="M586.1 78.2L587.8 83.7M591.9 78.2L590.2 83.7M586.5 77H591.5" fill="none" stroke="#8E7AD3" stroke-width="1.35"/>
+        </g>
+        <g>
+          <rect x="794" y="55" width="218" height="52" rx="26" fill="url(#glass)" stroke="#C6EADF"/>
+          <circle cx="821" cy="81" r="16" fill="#E8F9F3" stroke="#C4E9DD"/>
+          <circle cx="816" cy="78" r="2.7" fill="#54A98F"/>
+          <circle cx="826" cy="78" r="2.7" fill="#54A98F"/>
+          <circle cx="821" cy="87" r="2.7" fill="#54A98F"/>
+          <path d="M818.2 79.2L819.7 84.7M823.8 79.2L822.3 84.7M818.7 78H823.3" fill="none" stroke="#54A98F" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M829 70.5L830.2 74.3L834 75.5L830.2 76.7L829 80.5L827.8 76.7L824 75.5L827.8 74.3Z" fill="#75CDB5"/>
+        </g>
+      </g>
+
+      <g font-size="15" font-weight="760" letter-spacing="0.3">
+        <text x="90" y="86" fill="#397DA7">PYTHON</text>
+        <text x="275" y="86" fill="#7562B4">PYTORCH</text>
+        <text x="470" y="86" fill="#438E79">NLP</text>
+        <text x="615" y="86" fill="#6F5DAA">LLM / 大模型</text>
+        <text x="847" y="86" fill="#3F8C77">AI AGENTS</text>
+      </g>
+
+      <g>
+        <rect x="1031" y="55" width="127" height="52" rx="26" fill="#FFFFFF" fill-opacity="0.46" stroke="#DCE6F0" stroke-dasharray="3 4"/>
+        <text x="1049" y="78" fill="#95A2B4" font-size="9.5" font-weight="750" letter-spacing="1.2">BUILDING WITH</text>
+        <text x="1049" y="94" fill="#78879C" font-size="11.5" font-weight="700">curiosity ✦</text>
+      </g>
+    </g>
+  </g>
+
+  <rect x="8.5" y="8.5" width="1183" height="123" rx="29.5" fill="none" stroke="url(#frameStroke)"/>
+</svg>
