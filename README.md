@@ -69,7 +69,7 @@ ScalarPulse 是一个轻量、本地优先的 Python 训练指标看板。它不
 - [ ] 用小型项目验证 NLP 与大语言模型的核心方法。
 - [ ] 做一个会规划、会调用工具、而且能被评估的 Agent。
 - [ ] 用 ScalarPulse 观察 Agent 的成功率、延迟与 Token 用量。
-- [ ] 从简单任务开始探索时序预测与异常检测。
+- [x] 从简单任务开始探索时序预测与异常检测 —— 已长成 TSBackLab 回测工作台。
 
 </details>
 
@@ -82,6 +82,43 @@ ScalarPulse 是一个轻量、本地优先的 Python 训练指标看板。它不
 - Debug 时经常先怀疑模型，最后发现是自己少写了一个参数。
 - 喜欢小而清楚的工具，也相信好文档是功能的一部分。
 - 正在努力把“它理论上可以”改成“你现在就能跑”。
+
+</details>
+
+
+<a href="https://github.com/lizhengzhong20-sketch/TSBackLab">
+  <img src="./tsbacklab-card.svg" width="100%" alt="TSBackLab 时序预测训练与回测实验室">
+</a>
+
+TSBackLab 是那条"支线"长出来的工作台：一个时序预测的训练与回测框架。它最在乎的不是指标好看，而是时间语义诚实——可知性严格早于截点、验证固定取时间尾部、缺值不补零、任务账单执行前冻结；三种入口（YAML / CLI / Python / 页面）跑同一份配置，预测逐行一致。基线、梯度提升树、GRU 都通过同一个适配器协议接入，训练在独立进程里跑，关掉浏览器也不停。
+
+<p align="center">
+  <a href="https://github.com/lizhengzhong20-sketch/TSBackLab"><strong>查看源码</strong></a>
+  ·
+  <a href="https://github.com/lizhengzhong20-sketch/TSBackLab#readme"><strong>中文文档</strong></a>
+  ·
+  <a href="https://github.com/lizhengzhong20-sketch/TSBackLab/blob/main/docs/user-guide/quickstart.md"><strong>快速开始</strong></a>
+  ·
+  <a href="https://github.com/lizhengzhong20-sketch/TSBackLab/blob/main/docs/compatibility.md"><strong>兼容矩阵</strong></a>
+</p>
+
+<details>
+<summary><strong>📊 展开查看真实页面</strong></summary>
+
+<br>
+
+[![TSBackLab 任务监控页](https://raw.githubusercontent.com/lizhengzhong20-sketch/TSBackLab/main/docs/screenshots/ui-monitor.png)](https://github.com/lizhengzhong20-sketch/TSBackLab)
+
+</details>
+
+<details>
+<summary><strong>🧭 TSBackLab 待办</strong></summary>
+
+<br>
+
+- [x] 三入口一致性、防泄漏语义、任务服务与页面全部落地（159 项 Python 测试 + 端到端）。
+- [ ] 在 Ubuntu 22.04 / 24.04 上实测 CPU 全量。
+- [ ] 找一台真 NVIDIA 机器跑 GPU 验收与容器构建。
 
 </details>
 
