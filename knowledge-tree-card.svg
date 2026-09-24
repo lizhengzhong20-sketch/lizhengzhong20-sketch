@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">AI 模型知识树 — 从 0 到 1 的 AI 模型知识体系</title>
+  <desc id="desc">A light glassmorphism project card for the AI Model Knowledge Tree: five parts, thirteen chapters, analogies plus diagrams plus runnable code, and a production-practice page closing every chapter.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBFDFF"/>
+      <stop offset="0.52" stop-color="#F2F8FF"/>
+      <stop offset="1" stop-color="#F8F4FF"/>
+    </linearGradient>
+    <radialGradient id="skyGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#9EDCFF" stop-opacity="0.64"/>
+      <stop offset="1" stop-color="#9EDCFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violetGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#C9BBFF" stop-opacity="0.52"/>
+      <stop offset="1" stop-color="#C9BBFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mintGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#A9ECD8" stop-opacity="0.46"/>
+      <stop offset="1" stop-color="#A9ECD8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="0.56" stop-color="#FFFFFF" stop-opacity="0.70"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.52"/>
+    </linearGradient>
+    <linearGradient id="glassStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.50" stop-color="#DCEAF7"/>
+      <stop offset="1" stop-color="#D7CEF8"/>
+    </linearGradient>
+    <linearGradient id="path" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#69BEEB"/>
+      <stop offset="0.48" stop-color="#8B8BE8"/>
+      <stop offset="1" stop-color="#61C7AA"/>
+    </linearGradient>
+    <pattern id="microGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#849AB7" stroke-opacity="0.07"/>
+    </pattern>
+    <pattern id="graphGrid" width="53" height="36" patternUnits="userSpaceOnUse">
+      <path d="M53 0H0V36" fill="none" stroke="#9AAAC0" stroke-opacity="0.14"/>
+    </pattern>
+    <filter id="shadow" x="-25%" y="-30%" width="150%" height="180%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#7089AA" flood-opacity="0.16"/>
+    </filter>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="frame">
+      <rect x="8" y="8" width="1184" height="284" rx="34"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect x="8" y="8" width="1184" height="284" rx="34" fill="url(#background)"/>
+    <rect x="8" y="8" width="1184" height="284" rx="34" fill="url(#microGrid)"/>
+    <ellipse cx="80" cy="20" rx="285" ry="190" fill="url(#skyGlow)"/>
+    <ellipse cx="638" cy="-42" rx="300" ry="160" fill="url(#violetGlow)"/>
+    <ellipse cx="1110" cy="305" rx="350" ry="210" fill="url(#mintGlow)"/>
+
+    <g filter="url(#shadow)">
+      <rect x="38" y="32" width="682" height="236" rx="30" fill="url(#glass)" stroke="url(#glassStroke)" stroke-width="1.2"/>
+      <path d="M70 50H688" stroke="#FFFFFF" stroke-opacity="0.92" stroke-linecap="round"/>
+    </g>
+
+    <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', Arial, sans-serif">
+      <g transform="translate(70 58)">
+        <rect width="150" height="28" rx="14" fill="#FFFFFF" fill-opacity="0.74" stroke="#D8E8F4"/>
+        <circle cx="17" cy="14" r="4" fill="#64CBAE" filter="url(#softGlow)"/>
+        <text x="30" y="18" fill="#71809A" font-size="10.5" font-weight="750" letter-spacing="1.2">OPEN SOURCE · 中文</text>
+      </g>
+
+      <text x="70" y="137" fill="#263651" font-size="42" font-weight="780" letter-spacing="0.3">AI 模型知识树</text>
+      <text x="70" y="169" fill="#53627B" font-size="18" font-weight="600">从 0 到 1 的 AI 模型知识体系</text>
+
+      <g font-size="11.5" font-weight="700">
+        <g transform="translate(70 193)">
+          <rect width="172" height="34" rx="17" fill="#EAF7FF" stroke="#C3E5F8"/>
+          <circle cx="18" cy="17" r="4" fill="#63B9E5"/>
+          <text x="31" y="21" fill="#3E789C">五篇 · 十三章 · 50+ 页</text>
+        </g>
+        <g transform="translate(252 193)">
+          <rect width="160" height="34" rx="17" fill="#F2EEFF" stroke="#D8CCFA"/>
+          <circle cx="18" cy="17" r="4" fill="#9384DF"/>
+          <text x="31" y="21" fill="#6B60A5">类比 + 图解 + 代码</text>
+        </g>
+        <g transform="translate(422 193)">
+          <rect width="146" height="34" rx="17" fill="#EAF9F4" stroke="#C0EBDD"/>
+          <circle cx="18" cy="17" r="4" fill="#61BFA4"/>
+          <text x="31" y="21" fill="#438C79">每章生产实战收官</text>
+        </g>
+      </g>
+
+      <g font-size="10.5" font-weight="760" letter-spacing="0.6">
+        <g transform="translate(70 237)">
+          <rect width="104" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.68" stroke="#D9E6F2"/>
+          <text x="17" y="16" fill="#60718D">MARKDOWN</text>
+        </g>
+        <g transform="translate(182 237)">
+          <rect width="132" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.68" stroke="#D9E6F2"/>
+          <text x="17" y="16" fill="#786CAC">MERMAID ×108</text>
+        </g>
+        <g transform="translate(322 237)">
+          <rect width="124" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.68" stroke="#D9E6F2"/>
+          <text x="17" y="16" fill="#4A8C7B">PYTHON ×46</text>
+        </g>
+      </g>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="748" y="32" width="414" height="236" rx="30" fill="url(#glass)" stroke="url(#glassStroke)" stroke-width="1.2"/>
+      <path d="M778 50H1132" stroke="#FFFFFF" stroke-opacity="0.94" stroke-linecap="round"/>
+    </g>
+
+    <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', Arial, sans-serif">
+      <text x="780" y="77" fill="#7D8CA4" font-size="10.5" font-weight="760" letter-spacing="1.65">KNOWLEDGE TREE</text>
+      <g transform="translate(1044 60)">
+        <rect width="86" height="24" rx="12" fill="#EAF9F4" stroke="#BDE8DA"/>
+        <circle cx="14" cy="12" r="3.5" fill="#5CC2A4" filter="url(#softGlow)"/>
+        <text x="25" y="15.5" fill="#4A8C7B" font-size="9.5" font-weight="760" letter-spacing="0.8">13 CHAPTERS</text>
+      </g>
+
+      <rect x="780" y="93" width="352" height="140" rx="17" fill="#FBFDFF" fill-opacity="0.66" stroke="#DCE8F3"/>
+      <rect x="786" y="99" width="340" height="128" fill="url(#graphGrid)"/>
+
+      <g stroke-width="2" fill="none">
+        <path d="M829 175 L873 175" stroke="#9AAAC0"/>
+        <path d="M899 175 L943 175" stroke="#9AAAC0"/>
+        <path d="M971 170 C995 158 1000 148 1013 141" stroke="#9AAAC0"/>
+        <path d="M971 175 L1011 175" stroke="#9AAAC0"/>
+        <path d="M971 180 C995 190 1000 200 1013 207" stroke="#9AAAC0"/>
+        <path d="M1039 141 C1064 141 1068 163 1081 170" stroke="#9AAAC0" stroke-dasharray="4 4"/>
+        <path d="M1037 175 L1079 175" stroke="#9AAAC0" stroke-dasharray="4 4"/>
+      </g>
+
+      <g stroke-width="2.4" filter="url(#softGlow)">
+        <circle cx="816" cy="175" r="13" fill="#FFFFFF" stroke="#5A9DD4"/>
+        <circle cx="886" cy="175" r="13" fill="#FFFFFF" stroke="#56AB78"/>
+        <circle cx="956" cy="175" r="15" fill="#FFFFFF" stroke="#C9992F"/>
+        <circle cx="1026" cy="140" r="13" fill="#FFFFFF" stroke="#DE739F"/>
+        <circle cx="1026" cy="175" r="11" fill="#FFFFFF" stroke="#E08BB0"/>
+        <circle cx="1026" cy="210" r="11" fill="#FFFFFF" stroke="#DE739F"/>
+        <circle cx="1093" cy="175" r="13" fill="#FFFFFF" stroke="#9C7BE6"/>
+      </g>
+      <circle cx="1064" cy="112" r="4" fill="#DE739F" filter="url(#softGlow)"/>
+
+      <g font-size="9" fill="#6B7A93" text-anchor="middle" font-weight="680">
+        <text x="816" y="199">数学</text>
+        <text x="886" y="199">机器学习</text>
+        <text x="956" y="201">深度学习</text>
+        <text x="1026" y="124">NLP/LLM</text>
+        <text x="1026" y="164">推荐</text>
+        <text x="1026" y="231">强化学习</text>
+        <text x="1093" y="199">生成多模态</text>
+        <text x="1064" y="103">向量</text>
+      </g>
+
+      <g transform="translate(780 243)" font-size="9.5" font-weight="700">
+        <path d="M2 7H18" stroke="url(#path)" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="25" y="10" fill="#71809A">依赖即路径</text>
+        <text x="352" y="10" fill="#8794A9" text-anchor="end">docs/知识树.md</text>
+      </g>
+    </g>
+  </g>
+
+  <rect x="8.5" y="8.5" width="1183" height="283" rx="33.5" fill="none" stroke="#DCE8F4"/>
+</svg>

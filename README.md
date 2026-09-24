@@ -34,6 +34,43 @@ PyTorch 和实验可观测性工具，是我把想法变成项目的主要工程
 
 ## 🚀 精选项目
 
+<a href="https://github.com/lizhengzhong20-sketch/model_learning">
+  <img src="./knowledge-tree-card.svg" width="100%" alt="AI 模型知识树 · 从 0 到 1 的 AI 模型知识体系">
+</a>
+
+AI 模型知识树：一本"讲人话"的开源 AI 知识库。五篇十三章、50+ 页正文，从数学基础一路讲到 Transformer、大语言模型、推荐双塔、图神经网络、强化学习、因果推断与生成模型；每个模型先用生活类比建立直觉，再看图解与公式（每个公式配一句"人话"），最后用能跑的代码验证。每章收官一页「生产实战」，讲真实项目从 0 到 1 的数据 / 算力 / 算法选型与踩坑实录。
+
+<p align="center">
+  <a href="https://github.com/lizhengzhong20-sketch/model_learning"><strong>查看源码</strong></a>
+  ·
+  <a href="https://github.com/lizhengzhong20-sketch/model_learning#readme"><strong>中文文档</strong></a>
+  ·
+  <a href="https://github.com/lizhengzhong20-sketch/model_learning/blob/main/docs/%E7%9F%A5%E8%AF%86%E6%A0%91.md"><strong>知识树导航</strong></a>
+  ·
+  <a href="https://github.com/lizhengzhong20-sketch/model_learning/blob/main/ROADMAP.md"><strong>阅读路线</strong></a>
+</p>
+
+<details>
+<summary><strong>📊 展开查看知识树</strong></summary>
+
+<br>
+
+[![AI 模型知识树](https://raw.githubusercontent.com/lizhengzhong20-sketch/model_learning/main/assets/knowledge-tree.png)](https://github.com/lizhengzhong20-sketch/model_learning)
+
+</details>
+
+<details>
+<summary><strong>🧭 知识树待办</strong></summary>
+
+<br>
+
+- [x] 五篇十三章 v0.1.0 上线：50+ 页正文 + 每章「生产实战」收官页 + 折叠式知识树导航。
+- [ ] 全库术语表 GLOSSARY.md（中英对照 + 一句话解释）。
+- [ ] 各章配套 Jupyter 实战 notebook。
+- [ ] 前沿技术地图持续登记新模型（世界模型 / 新架构……）。
+
+</details>
+
 <a href="https://github.com/lizhengzhong20-sketch/scalarpulse">
   <img src="./scalarpulse-card.svg" width="100%" alt="ScalarPulse 本地实时训练指标可视化工具">
 </a>
